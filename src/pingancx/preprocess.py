@@ -1,4 +1,9 @@
-# pre processing
+# -*- coding: utf-8 -*-
+
+"""
+分割数据(类别不平衡), 异常值处理(缺失值, 异常值), 特征选择(人工 or WHAT ?).
+补充:
+"""
 
 if __name__ == '__main__':
-	pass
+    pass

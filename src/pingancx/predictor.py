@@ -42,9 +42,15 @@ def my_Model(train_data, val_data):
     return f1, acc, recall
 
 
-# 使用训练好的分类器对测试样例分类
-def predict():
-    pass
+def predict(X_train, Y_train, test_data):
+    """predict for testing data
+    :param model:
+    :param test_data:
+    :return:
+    """
+    lr = LogisticRegression(penalty='l2', random_state=137, solver='newton-cg', C=0.3)
+    lr.fit(X=X_train, y=Y_train)
+    return lr.predict(X=test_data)
 
 
 if __name__ == '__main__':
